@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Web 01</title>
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+  <form action="./06_forms.html" method="GET">
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+    <input type="number" name="edad" min="1" max="100" step="1">
+
+    <input type="tel" name="telefono" placeholder="Tu número de teléfono">
+
+    <input type="date" name="fecha_nacimiento">
+
+    <input type="datetime-local" name="fecha_hora">
+
+    <input type="time" name="hora_cita">
+
+
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+      <option value="mx">México</option>
+      <option value="es">España</option>
+      <option value="ar">Argentina</option>
+      <option value="co">Colombia</option>
+    </select>
+
+    <select name="ciudad">
+      <optgroup label="España">
+        <option value="madrid">Madrid</option>
+        <option value="barcelona">Barcelona</option>
+      </optgroup>
+      <optgroup label="México">
+        <option value="cdmx">Ciudad de México</option>
+        <option value="guadalajara">Guadalajara</option>
+      </optgroup>
+    </select>
+
+    <label for="color">Color favorito:</label>
+    <input type="color" id="color" name="color">
+
+    <label for="archivo">Subir archivo:</label>
+    <input type="file" id="archivo" name="archivo">
+
+    <label>
+      <input type="checkbox" name="terminos" required>
+      Acepto los términos y condiciones
+    </label>
+
+    <input type="range" name="volumen" min="0" max="100">
+
+    <input type="reset" value="Reseteo">
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Restablecer</button>
+
+  </form>
+
+
+  <form>
+  <fieldset>
+    <legend>Información Personal</legend>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" required>
+  </fieldset>
+
+  <fieldset>
+    <legend>Dirección</legend>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion">
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" name="ciudad">
+  </fieldset>
+
+  <label for="ciudad">Elige tu ciudad:</label>
+    <input list="ciudades" id="ciudad" name="ciudad">
+    <datalist id="ciudades">
+      <option value="Madrid">
+      <option value="Barcelona">
+      <option value="Buenos Aires">
+      <option value="Ciudad de México">
+    </datalist>
+
+    <label for="avatar">A recent photo of yourself:</label>
+<input type="file" capture="user" accept="image/*" name="avatar" id="avatar">
+
+
+  <button type="submit">Enviar</button>
+</form>
+
+
+</body>
+
+</html>
