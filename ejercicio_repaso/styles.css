@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-left: 1px solid #ccc;
+}
+
+/* Estructura del layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container nav {
+  grid-column: 1;
+}
+
+.container main {
+  grid-column: 2;
+}
+
+.container aside {
+  grid-column: 3;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Indicadores de etiquetas semánticas */
+nav {
+  border: 3px solid green;
+}
+
+main {
+  border: 3px solid blue;
+}
+
+aside {
+  border: 3px solid orange;
+}
