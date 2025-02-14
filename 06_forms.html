@@ -10,24 +10,50 @@
 <body>
   <form action="./06_forms.html" method="GET">
 
+
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+    <br><br>
 
     <label for="email">Correo:</label>
     <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
 
+    <br><br>
+
     <label for="mensaje">Mensaje:</label>
     <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
 
+    <br><br>
+
     <input type="number" name="edad" min="1" max="100" step="1">
+
+    <br><br>
 
     <input type="tel" name="telefono" placeholder="Tu número de teléfono">
 
+    <br><br>
+
     <input type="date" name="fecha_nacimiento">
+
+    <br><br>
 
     <input type="datetime-local" name="fecha_hora">
 
+    <br><br>
+
     <input type="time" name="hora_cita">
+
+    <p>
+      <label>
+        <input type="checkbox" name="suscripcion" value="1">Suscribirme al boletín de noticias</label>
+    </p>
+
+    <p>
+      <label for="password">Password (obligatorio)</label><br>
+      <input required minlength="8" type="password" id="password" name="password">
+      <span>Enter at least eight characters</span>
+    </p>
 
 
     <label for="pais">País:</label>
@@ -49,49 +75,63 @@
       </optgroup>
     </select>
 
+    <br><br>
+
     <label for="color">Color favorito:</label>
     <input type="color" id="color" name="color">
+
+    <br><br>
 
     <label for="archivo">Subir archivo:</label>
     <input type="file" id="archivo" name="archivo">
 
+    <br><br>
+
     <label>
-      <input type="checkbox" name="terminos" required>
+      <input type="checkbox" name="terminos" value="1">
       Acepto los términos y condiciones
     </label>
+    <label>
+      <input type="checkbox" name="terminos" value="2">
+      Acepto los términos y condiciones 2
+    </label>
+
+    <br><br>
 
     <input type="range" name="volumen" min="0" max="100">
 
-    <input type="reset" value="Reseteo">
+    <br><br>
 
+    <input type="reset" value="Reseteo">
     <button type="submit">Enviar</button>
     <button type="reset">Restablecer</button>
 
   </form>
 
+  <br><br>
 
   <form>
-  <fieldset>
-    <legend>Información Personal</legend>
+    <fieldset>
+      <legend>Información Personal</legend>
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
 
-    <label for="email">Correo:</label>
-    <input type="email" id="email" name="email" required>
-  </fieldset>
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email">
+    </fieldset>
 
-  <fieldset>
-    <legend>Dirección</legend>
+    <fieldset>
+      <legend>Dirección</legend>
 
-    <label for="direccion">Dirección:</label>
-    <input type="text" id="direccion" name="direccion">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion">
 
-    <label for="ciudad">Ciudad:</label>
-    <input type="text" id="ciudad" name="ciudad">
-  </fieldset>
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad">
+    </fieldset>
 
-  <label for="ciudad">Elige tu ciudad:</label>
+    <label for="ciudad">Elige tu ciudad:</label>
     <input list="ciudades" id="ciudad" name="ciudad">
     <datalist id="ciudades">
       <option value="Madrid">
@@ -101,11 +141,11 @@
     </datalist>
 
     <label for="avatar">A recent photo of yourself:</label>
-<input type="file" capture="user" accept="image/*" name="avatar" id="avatar">
+    <input type="file" capture="user" accept="image/*" name="avatar" id="avatar">
 
 
-  <button type="submit">Enviar</button>
-</form>
+    <button type="submit">Enviar</button>
+  </form>
 
 
 </body>
