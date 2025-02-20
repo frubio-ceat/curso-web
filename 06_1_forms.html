@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form method="get" action="./06_1_forms.html">
+        <p>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="jonh">
+        </p>
+        <p>
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" name="apellidos" placeholder="doe">
+        </p>
+        <p>
+            <label for="apellidos">Email (obligatorio)</label><br>
+            <input type="email" name="email" placeholder="ejemplo@dominio.com">
+        </p>
+        <p>
+            <label for="apellidos">Contraseña (obligatorio)</label><br>
+            <input type="password" name="password" placeholder="****">
+            <span>Mínimo 8 caracteres.</span>
+        </p>
+        <p>
+            <label>Edad</label><br>
+            <input type="number" name="edad" min="1" max="100" step="5">
+        </p>
+        <p>
+            <label>telefono</label>
+            <input type="tel" name="telefono" placeholder="Tu número de teléfono">
+        </p>
+        <p>
+            <label for="linkedInURL">LinkedIn</label><br />
+            <input type="url" id="linkedInURL" name="sitio_web" placeholder="https://ejemplo.com">
+        </p>
+        <p>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+        </p>
+        <p>
+            <input type="time" name="hora_cita">
+        </p>
+
+        <p>
+            <input type="datetime-local" name="fecha_hora">
+        </p>
+
+        <p>
+        <h4>Géneros musicales</h4>
+        <ul>
+            <li><label><input type="checkbox" name="music" value="rock">Rock</label></li>
+            <li><label><input type="checkbox" name="music" value="classic">Classic</label></li>
+            <li><label><input type="checkbox" name="music" value="pop">Pop</label></li>
+            <li><label><input type="checkbox" name="music" value="techno">Techno</label></li>
+        </ul>
+        </p>
+
+        <p>
+        <p>
+        <ul>
+            <li><input type="radio" name="genero" value="masculino"> Masculino</li>
+            <li><input type="radio" name="genero" value="femenino"> Femenino</li>
+        </ul>
+        </p>
+        <p>
+            <input type="file" name="foto">
+        </p>
+
+        <p>
+            <input type="range" name="volumen" min="0" max="5">
+        </p>
+
+        <p>
+            <input type="color" name="color_favorito">
+        </p>
+
+        <p>
+            <label for="mensaje">Mensaje largo</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí...">
+                Hello developer,
+            </textarea>
+
+        </p>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="terminos"> Acepto los <a href="https://es.lipsum.com/privacy">Términos y
+                    condiciones</a>
+            </label>
+        </p>
+        <p>
+            <label for="pais">Selecciona tu país:</label>
+            <select id="pais" name="pais">
+                <option value="mx">México</option>
+                <option value="es">España</option>
+                <option value="ar">Argentina</option>
+                <option value="co">Colombia</option>
+            </select>
+        </p>
+        <p>
+            <select name="ciudad">
+                <optgroup label="España">
+                    <option value="madrid">Madrid</option>
+                    <option value="barcelona">Barcelona</option>
+                </optgroup>
+                <optgroup label="México">
+                    <option value="cdmx">Ciudad de México</option>
+                    <option value="guadalajara">Guadalajara</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+        </p>
+
+        <p>
+            <label for="ciudad">Elige tu ciudad:</label>
+            <input type="text" list="ciudades" id="ciudad" name="ciudad">
+            <datalist id="ciudades">
+                <option value="Madrid">
+                <option value="Barcelona">
+                <option value="Buenos Aires">
+                <option value="Ciudad de México">
+            </datalist>
+
+        </p>
+
+        
+        <p>
+            <button type="submit">Enviar Formulario</button>
+        </p>
+    </form>
+</body>
+
+</html>
