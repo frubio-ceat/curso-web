@@ -1,0 +1,14 @@
+
+[disabled] {
+  color: red;
+}
+
+[type="text"] {
+  background-color: yellow;
+}
+
+/*
+:hover {
+  background-color: lightblue;
+}
+*/
