@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errores en imágenes</title>
+</head>
+<body>
+
+    <img alt="html5" src="./images/html_icon.png">
+
+    <!-- completar para que cargue dependiendo del tamaño -->
+    <img src="./images/html_icon.png" alt="Imagen con error"
+    srcset="./images/html_icon.png 1024w, ./images/html_icon_sm.png 512w"
+    sizes="(max-width: 800px) 400px, 800px">
+
+    <!-- corregir y comprobar por tipo-->
+    <picture>
+        <source src="./images/html_icon.webp" type="image/webp">
+        <img src="./images/html_icon.png" alt="Imagen predeterminada">
+    </picture>
+    
+    <picture>
+        <source src="./images/html_icon.webp" type="image/webp">
+        <source src="./images/html_icon_sm.png" media="(max-width: 800px)">
+        <img src="./images/html_icon.png" alt="Imagen de respaldo">
+    </picture>
+
+</body>
+</html>
