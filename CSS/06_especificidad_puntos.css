@@ -1,0 +1,20 @@
+
+a {
+  color: red;
+}
+
+a.my-class {
+  color: green;
+}
+
+a.my-class.another-class {
+  color: rebeccapurple;
+}
+
+a.my-class.another-class[href] {
+  color: goldenrod;
+}
+
+a.my-class.another-class[href]:hover {
+  color: lightgrey;
+}
