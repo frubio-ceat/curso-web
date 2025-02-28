@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
   <style>
     p strong {
-      color: red;
+      color: blue;
     }
 
-    .caja strong {
-      color: blue;
+    p > strong {
+      color: red;
     }
   </style>
 </head>
 
 <body>
+
   <p>Un párrafo de texto con algo de <strong>texto en negrita para enfatizar</strong>.</p>
 
   <p>Un párrafo de texto con algo de <em><strong>texto en negrita para enfatizar</strong></em>.</p>
@@ -30,6 +32,8 @@
       <p>Un párrafo de texto con algo de <strong>texto en negrita para enfatizar</strong>.</p>
     </article>
   </section>
+
+  <p class="class1 class2">Ejemplo empate</p>
 
 </body>
 

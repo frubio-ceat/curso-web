@@ -1,20 +1,32 @@
-
+/*1 punto*/
 a {
   color: red;
 }
 
+/*11*/
 a.my-class {
   color: green;
 }
 
+/*21 puntos*/
 a.my-class.another-class {
   color: rebeccapurple;
 }
 
+/*31 puntos*/
 a.my-class.another-class[href] {
   color: goldenrod;
 }
 
+/*41 puntos*/
 a.my-class.another-class[href]:hover {
   color: lightgrey;
+}
+
+a[id="copilotnotechives"] {
+  color: white;
+}
+
+a#copilotnotechives{
+  color: antiquewhite;
 }
