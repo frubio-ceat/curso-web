@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de imágenes flotantes</title>
+  <style>
+    .countries {
+      column-count: 5;
+      /*
+      width: 100%;
+      column-width: 260px;
+      */
+      column-gap: 1em;
+    }
+
+    .main-text {
+      text-align: center;
+    }
+
+    .doble-columna {
+      max-width: 75ch;
+      /* Máximo ancho de 75 caracteres */
+      column-count: 2;
+      /* Divide el texto en 2 columnas */
+      column-gap: 20px;
+      /* Espacio entre las columnas */
+      text-align: justify;
+      /* Justifica el texto para un mejor aspecto visual */
+      margin: 0 auto;
+      /* Centra el texto aplicando un margen automático*/
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul class="countries">
+    <li>Afghanistan</li>
+    <li>Aland Islands</li>
+    <li>Albania</li>
+    <li>Algeria</li>
+    <li>American Samoa</li>
+    <li>Andorra</li>
+    <li>Angola</li>
+    <li>Anguilla</li>
+    <li>Antarctica</li>
+    <li>Antigua and Barbuda</li>
+    <li>Argentina</li>
+    <li>Armenia</li>
+    <li>Aruba</li>
+    <li>Australia</li>
+    <li>Austria</li>
+    <li>Azerbaijan</li>
+    <li>Bahamas</li>
+    <li>Bahrain</li>
+    <li>Bangladesh</li>
+    <li>Barbados</li>
+    <li>Belarus</li>
+    <li>Belgium</li>
+    <li>Belize</li>
+    <li>Benin</li>
+    <li>Bermuda</li>
+    <li>Bhutan</li>
+    <li>Bolivia</li>
+    <li>Bonaire, Sint Eustatius and Saba</li>
+    <li>Bosnia and Herzegovina</li>
+    <li>Botswana</li>
+    <li>Bouvet Island</li>
+    <li>Brazil</li>
+    <li>British Indian Ocean Territory</li>
+    <li>Brunei Darussalam</li>
+    <li>Bulgaria</li>
+    <li>Burkina Faso</li>
+    <li>Burundi</li>
+    <li>Cambodia</li>
+    <li>Cameroon</li>
+    <li>Canada</li>
+    <li>Cape Verde</li>
+    <li>Cayman Islands</li>
+    <li>Central African Republic</li>
+    <li>Chad</li>
+    <li>Chile</li>
+    <li>China</li>
+    <li>Christmas Island</li>
+    <li>Cocos (Keeling) Islands</li>
+    <li>Colombia</li>
+    <li>Comoros</li>
+    <li>Congo</li>
+    <li>Congo, the Democratic Republic of the</li>
+    <li>Cook Islands</li>
+    <li>Costa Rica</li>
+    <li>Cote D'Ivoire</li>
+    <li>Croatia</li>
+    <li>Cuba</li>
+    <li>Curacao</li>
+    <li>Cyprus</li>
+    <li>Czech Republic</li>
+    <li>Denmark</li>
+    <li>Djibouti</li>
+    <li>Dominica</li>
+    <li>Dominican Republic</li>
+    <li>Ecuador</li>
+    <li>Egypt</li>
+    <li>El Salvador</li>
+    <li>Equatorial Guinea</li>
+    <li>Eritrea</li>
+    <li>Estonia</li>
+    <li>Ethiopia</li>
+    <li>Falkland Islands (Malvinas)</li>
+    <li>Faroe Islands</li>
+    <li>Fiji</li>
+    <li>Finland</li>
+    <li>France</li>
+    <li>French Guiana</li>
+    <li>French Polynesia</li>
+    <li>French Southern Territories</li>
+    <li>Gabon</li>
+    <li>Gambia</li>
+    <li>Georgia</li>
+    <li>Germany</li>
+    <li>Ghana</li>
+    <li>Gibraltar</li>
+    <li>Greece</li>
+    <li>Greenland</li>
+    <li>Grenada</li>
+    <li>Guadeloupe</li>
+    <li>Guam</li>
+    <li>Guatemala</li>
+    <li>Guernsey</li>
+    <li>Guinea</li>
+    <li>Guinea-Bissau</li>
+    <li>Guyana</li>
+    <li>Haiti</li>
+    <li>Heard Island and Mcdonald Islands</li>
+    <li>Holy See (Vatican City State)</li>
+    <li>Honduras</li>
+    <li>Hong Kong</li>
+    <li>Hungary</li>
+    <li>Iceland</li>
+    <li>India</li>
+    <li>Indonesia</li>
+    <li>Iran, Islamic Republic of</li>
+    <li>Iraq</li>
+    <li>Ireland</li>
+    <li>Isle of Man</li>
+    <li>Israel</li>
+    <li>Italy</li>
+    <li>Jamaica</li>
+    <li>Japan</li>
+    <li>Jersey</li>
+    <li>Jordan</li>
+    <li>Kazakhstan</li>
+    <li>Kenya</li>
+    <li>Kiribati</li>
+    <li>Korea, Democratic People"s Republic of</li>
+    <li>Korea, Republic of</li>
+    <li>Kosovo</li>
+    <li>Kuwait</li>
+    <li>Kyrgyzstan</li>
+    <li>Lao People's Democratic Republic</li>
+    <li>Latvia</li>
+    <li>Lebanon</li>
+    <li>Lesotho</li>
+    <li>Liberia</li>
+    <li>Libyan Arab Jamahiriya</li>
+    <li>Liechtenstein</li>
+    <li>Lithuania</li>
+    <li>Luxembourg</li>
+    <li>Macao</li>
+    <li>Macedonia, the Former Yugoslav Republic of</li>
+    <li>Madagascar</li>
+    <li>Malawi</li>
+    <li>Malaysia</li>
+    <li>Maldives</li>
+    <li>Mali</li>
+    <li>Malta</li>
+    <li>Marshall Islands</li>
+    <li>Martinique</li>
+    <li>Mauritania</li>
+    <li>Mauritius</li>
+    <li>Mayotte</li>
+    <li>Mexico</li>
+    <li>Micronesia, Federated States of</li>
+    <li>Moldova, Republic of</li>
+    <li>Monaco</li>
+    <li>Mongolia</li>
+    <li>Montenegro</li>
+    <li>Montserrat</li>
+    <li>Morocco</li>
+    <li>Mozambique</li>
+    <li>Myanmar</li>
+    <li>Namibia</li>
+    <li>Nauru</li>
+    <li>Nepal</li>
+    <li>Netherlands</li>
+    <li>Netherlands Antilles</li>
+    <li>New Caledonia</li>
+    <li>New Zealand</li>
+    <li>Nicaragua</li>
+    <li>Niger</li>
+    <li>Nigeria</li>
+    <li>Niue</li>
+    <li>Norfolk Island</li>
+    <li>Northern Mariana Islands</li>
+    <li>Norway</li>
+    <li>Oman</li>
+    <li>Pakistan</li>
+    <li>Palau</li>
+    <li>Palestinian Territory, Occupied</li>
+    <li>Panama</li>
+    <li>Papua New Guinea</li>
+    <li>Paraguay</li>
+    <li>Peru</li>
+    <li>Philippines</li>
+    <li>Pitcairn</li>
+    <li>Poland</li>
+    <li>Portugal</li>
+    <li>Puerto Rico</li>
+    <li>Qatar</li>
+    <li>Reunion</li>
+    <li>Romania</li>
+    <li>Russian Federation</li>
+    <li>Rwanda</li>
+    <li>Saint Barthelemy</li>
+    <li>Saint Helena</li>
+    <li>Saint Kitts and Nevis</li>
+    <li>Saint Lucia</li>
+    <li>Saint Martin</li>
+    <li>Saint Pierre and Miquelon</li>
+    <li>Saint Vincent and the Grenadines</li>
+    <li>Samoa</li>
+    <li>San Marino</li>
+    <li>Sao Tome and Principe</li>
+    <li>Saudi Arabia</li>
+    <li>Senegal</li>
+    <li>Serbia</li>
+    <li>Serbia and Montenegro</li>
+    <li>Seychelles</li>
+    <li>Sierra Leone</li>
+    <li>Singapore</li>
+    <li>Sint Maarten</li>
+    <li>Slovakia</li>
+    <li>Slovenia</li>
+    <li>Solomon Islands</li>
+    <li>Somalia</li>
+    <li>South Africa</li>
+    <li>South Georgia and the South Sandwich Islands</li>
+    <li>South Sudan</li>
+    <li>Spain</li>
+    <li>Sri Lanka</li>
+    <li>Sudan</li>
+    <li>Suriname</li>
+    <li>Svalbard and Jan Mayen</li>
+    <li>Swaziland</li>
+    <li>Sweden</li>
+    <li>Switzerland</li>
+    <li>Syrian Arab Republic</li>
+    <li>Taiwan, Province of China</li>
+    <li>Tajikistan</li>
+    <li>Tanzania, United Republic of</li>
+    <li>Thailand</li>
+    <li>Timor-Leste</li>
+    <li>Togo</li>
+    <li>Tokelau</li>
+    <li>Tonga</li>
+    <li>Trinidad and Tobago</li>
+    <li>Tunisia</li>
+    <li>Turkey</li>
+    <li>Turkmenistan</li>
+    <li>Turks and Caicos Islands</li>
+    <li>Tuvalu</li>
+    <li>Uganda</li>
+    <li>Ukraine</li>
+    <li>United Arab Emirates</li>
+    <li>United Kingdom</li>
+    <li>United States</li>
+    <li>United States Minor Outlying Islands</li>
+    <li>Uruguay</li>
+    <li>Uzbekistan</li>
+    <li>Vanuatu</li>
+    <li>Venezuela</li>
+    <li>Viet Nam</li>
+    <li>Virgin Islands, British</li>
+    <li>Virgin Islands, U.s.</li>
+    <li>Wallis and Futuna</li>
+    <li>Western Sahara</li>
+    <li>Yemen</li>
+    <li>Zambia</li>
+    <li>Zimbabwe</li>
+  </ul>
+
+  <section class="main-text">
+  <h2>Ejemplo de Doble Columna</h2>
+  <p class="doble-columna">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor eros ac nisi vestibulum, vel auctor metus
+    facilisis. Nullam vitae orci quis felis eleifend tincidunt. Cras condimentum felis leo, non viverra enim vehicula
+    id. Sed bibendum erat metus, sed sodales velit tempor a. Donec ut suscipit nisl, in fringilla eros. Nulla
+    sollicitudin id lorem a dictum. Integer non quam et enim viverra fermentum id vel est. Ut malesuada mauris et libero
+    feugiat, at laoreet ligula tincidunt.
+    Vivamus auctor ligula a dui iaculis, a efficitur nisl fermentum. Nam malesuada neque et suscipit pharetra. Integer
+    sollicitudin lorem non metus pretium, a condimentum ipsum eleifend. Curabitur vel velit in nunc tincidunt vulputate.
+    Suspendisse euismod magna ac nisi cursus, at facilisis neque rhoncus. Fusce ullamcorper sapien erat, id placerat
+    eros mollis in. Mauris ut tempus ex. Fusce eu massa nunc. Donec sed interdum risus. Donec at nunc sollicitudin,
+    sodales velit et, iaculis nisl.
+  </p>
+</section>
+
+</body>
+
+</html>

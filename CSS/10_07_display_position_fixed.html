@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con position: fixed</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* Hacemos el body más alto para que haya desplazamiento */
+            background-color: #f0f0f0;
+        }
+
+        /* Elemento con position: fixed */
+        .caja-fija {
+            position: fixed; /* Fijado en la ventana */
+            bottom: 20px; /* 20px desde la parte superior de la ventana */
+            right: 20px; /* 20px desde el borde derecho de la ventana */
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            color: white;
+            line-height: 150px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        /* Contenido normal debajo del elemento fijo */
+        .contenido {
+            margin-top: 200px;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Caja fija -->
+    <div class="caja-fija">
+        Caja fija
+    </div>
+
+    <!-- Contenido normal -->
+    <div class="contenido">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula dapibus nisi, sit amet vulputate nulla luctus nec. Nam varius nulla ut ex interdum, ut aliquet arcu faucibus. Vivamus auctor fringilla enim non condimentum. Fusce vestibulum feugiat tortor, vel suscipit augue. Integer vestibulum mauris eu vehicula faucibus. Suspendisse vitae congue turpis. Nam vulputate nisi vel justo suscipit, at iaculis dui pharetra. Nunc pretium viverra eros id ultricies. Etiam lacinia fringilla felis, ac auctor lectus congue eu. Donec gravida tempus interdum. 
+        </p>
+        <p>
+            Integer fringilla, turpis a feugiat bibendum, felis lorem vulputate nulla, a dignissim turpis ligula sit amet elit. Integer fringilla augue et magna venenatis lacinia. Etiam venenatis sapien non tincidunt vehicula. Aliquam pretium neque vitae ligula cursus convallis. Suspendisse at sollicitudin risus. Nam ornare purus sit amet massa tempus, id luctus lorem condimentum.
+        </p>
+    </div>
+
+</body>
+</html>

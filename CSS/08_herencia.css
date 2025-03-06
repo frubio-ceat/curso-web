@@ -1,0 +1,11 @@
+body {
+  color: #141414;
+}
+
+article.herencia {
+  font-size: 1.2rem;
+}
+
+p {
+  font-style: italic;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo inline-block</title>
+    <style>
+        /* Menú de navegación con inline-block */
+        .menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Tarjetas con inline-block */
+        .card {
+            display: inline-block;
+            width: 200px;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Menú de navegación</h2>
+    <nav class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <h2>Tarjetas con inline-block</h2>
+    <div>
+        <div class="card">
+            <h3>Tarjeta 1</h3>
+            <p>Contenido de la tarjeta 1.</p>
+        </div>
+        <div class="card">
+            <h3>Tarjeta 2</h3>
+            <p>Contenido de la tarjeta 2.</p>
+        </div>
+    </div>
+
+</body>
+</html>

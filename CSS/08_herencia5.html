@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unset all unset</title>
+
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      color: blue;/* Color heredable */
+      margin: 20px;
+    }
+
+    article {
+      background: lightgray;/* No heredable */
+      padding: 20px;
+      border: 2px solid black;
+      color: red;/* Heredable */
+      font-size: 1.5em;/* Heredable */
+      margin: 40px;
+    }
+
+    /* Reseteamos todo con all: unset; */
+    .reset {
+      all: unset;
+      background: yellow;
+      /* Añadimos esto para ver el cambio */
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h2>Artículo normal</h2>
+    <p>Este artículo tiene todos los estilos aplicados.</p>
+  </article>
+
+  <article class="reset">
+    <h2>Artículo con `all: unset;`</h2>
+    <p>Todos los estilos han sido reiniciados.</p>
+  </article>
+</body>
+
+</html>

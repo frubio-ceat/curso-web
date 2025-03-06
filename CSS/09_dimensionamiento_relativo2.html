@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con vw y vmax</title>
+    <style>
+        /* Fuente base responsiva usando vw */
+        h1 {
+            font-size: 5vw; /* El tamaño de fuente será el 5% del ancho de la ventana */
+            text-align: center;
+            margin: 2vh 0;
+        }
+
+        p {
+            font-size: 2vw; /* Se ajusta dinámicamente al tamaño de la pantalla */
+            text-align: center;
+        }
+
+        /* Un contenedor que usa vmax para ajustar su tamaño */
+        .contenedor {
+            width: 50vmax;  /* 50% de la dimensión más grande de la ventana */
+            height: 20vmax; /* 20% de la dimensión más grande de la ventana */
+            background: lightblue;
+            font-size: 3vw;
+            margin: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Texto con vw</h1>
+    <p>Este párrafo también usa vw para ajustar su tamaño automáticamente.</p>
+
+    <div class="contenedor">
+        Caja con vmax
+    </div>
+
+</body>
+</html>

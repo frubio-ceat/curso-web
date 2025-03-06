@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    p {
+      color: red;
+    }
+
+    .my_section {
+      color: blue;
+    }
+
+    .my_section p {
+      color: inherit;
+    }
+
+    .my_section h1 {
+      color: initial;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Este texto es rojo.</p>
+
+  <section class="my_section">
+    <h1>Herencia</h1>
+    <p>Este texto debería azul.</p>
+  </section>
+</body>
+
+</html>

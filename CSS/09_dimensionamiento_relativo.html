@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de em, lh y ch</title>
+    <style>
+        /* Tamaño base de la fuente en el documento */
+        html {
+            font-size: 16px; /* 1em = 16px */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5; /* 1lh = 1.5 veces el tamaño de la fuente */
+            padding: 2em; /* Espaciado basado en la fuente del body */
+        }
+
+        h1 {
+            font-size: 2em; /* 2 veces el tamaño de la fuente del body (32px) */
+            margin-bottom: 1lh; /* Margen igual a la altura de línea */
+        }
+
+        p {
+            font-size: 1.2em; /* 1.2 veces el tamaño de la fuente base (19.2px) */
+            line-height: 1.6; /* Línea de 1.6 veces el tamaño de fuente */
+            margin-bottom: 1lh; /* Espaciado igual a la altura de línea */
+            width: 50ch; /* Máximo 50 caracteres por línea */
+        }
+
+        .caja {
+            background: lightgray;
+            padding: 1lh; /* Padding basado en la altura de línea */
+            margin-top: 2lh; /* Margen superior basado en la altura de línea */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Unidades Relativas</h1>
+    
+    <p>
+        Este párrafo usa `1.2em` para su tamaño, con un ancho de `50ch` 
+        y espaciado controlado por `lh`.
+    </p>
+
+    <div class="caja">
+        Este bloque tiene padding y margen calculados con `lh`.
+    </div>
+</body>
+</html>

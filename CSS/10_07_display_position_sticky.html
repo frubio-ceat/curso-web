@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con position: sticky</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* Hacemos el body más alto para que haya desplazamiento */
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo para la tabla */
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            position: sticky; /* Hace que el encabezado se quede fijo */
+            top: 0; /* Se "pega" a la parte superior de su contenedor cuando hace scroll */
+        }
+
+        tr {
+            background-color: #fff;
+        }
+
+        /* Añadir algo de espacio y diseño a la tabla */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor con scroll -->
+    <div class="contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Carrera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>24</td>
+                    <td>Ingeniería</td>
+                </tr>
+                <tr>
+                    <td>Ana López</td>
+                    <td>29</td>
+                    <td>Medicina</td>
+                </tr>
+                <tr>
+                    <td>Mario García</td>
+                    <td>35</td>
+                    <td>Arquitectura</td>
+                </tr>
+                <tr>
+                    <td>Laura Torres</td>
+                    <td>22</td>
+                    <td>Derecho</td>
+                </tr>
+                <tr>
+                    <td>Pedro Gómez</td>
+                    <td>40</td>
+                    <td>Economía</td>
+                </tr>
+                <tr>
+                    <td>Carla Fernández</td>
+                    <td>30</td>
+                    <td>Psicología</td>
+                </tr>
+                <tr>
+                    <td>David Sánchez</td>
+                    <td>27</td>
+                    <td>Biología</td>
+                </tr>
+                <tr>
+                    <td>Raquel Ruiz</td>
+                    <td>28</td>
+                    <td>Historia</td>
+                </tr>
+                <tr>
+                    <td>Elena Pérez</td>
+                    <td>33</td>
+                    <td>Marketing</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

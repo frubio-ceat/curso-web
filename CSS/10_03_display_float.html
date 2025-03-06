@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de imágenes flotantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .img-left {
+            float: left;
+            width: 150px;
+            margin: 10px 15px 10px 0;
+            border-radius: 8px;
+        }
+
+        .img-right {
+            float: right;
+            width: 150px;
+            margin: 10px 0 10px 15px;
+            border-radius: 8px;
+        }
+
+        /* Para evitar que el contenido siguiente quede desordenado */
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Imagen flotando a la izquierda</h2>
+    <img src="../images/HTML5.png" alt="Imagen izquierda" class="img-left">
+    <p>
+        Esta imagen está flotando a la izquierda, lo que permite que el texto la rodee. 
+        Es útil para mostrar imágenes alineadas con el contenido sin interrumpir el flujo de lectura. 
+        Puedes ver cómo el texto se ajusta a su alrededor, creando un efecto visualmente atractivo.
+    </p>
+
+    <div class="clearfix"></div> <!-- Para evitar problemas de flotación -->
+
+    <h2>Imagen flotando a la derecha</h2>
+    <img src="../images/HTML5.png" alt="Imagen derecha" class="img-right">
+    <p>
+        Aquí la imagen flota a la derecha, haciendo que el texto la rodee desde el lado izquierdo. 
+        Esto es útil cuando quieres destacar una imagen pero sin romper el flujo natural de la lectura.
+        Se usa frecuentemente en blogs, artículos y noticias para mejorar la estructura visual.
+    </p>
+
+    <div class="clearfix"></div> <!-- Evita que otros elementos se vean afectados por los floats -->
+
+</body>
+</html>

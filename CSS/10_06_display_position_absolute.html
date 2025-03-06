@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo con position: absolute</title>
+  <style>
+    /* Contenedor de los elementos */
+    .contenedor {
+      width: 300px;
+      height: 300px;
+      background-color: steelblue;
+      color: white;
+      position: relative;
+      /* Esto permite que los elementos absolutamente posicionados dentro de él se referencien a este contenedor */
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    /* Caja normal que no está absolutamente posicionada */
+    .caja-normal {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+    /* Elemento absolutamente posicionado */
+    .caja-absoluta {
+      position: absolute;
+      /* Posiciona el elemento de forma absoluta respecto al contenedor */
+      top: 50px;
+      /* 50px desde la parte superior del contenedor */
+      left: 100px;
+      /* 100px desde la parte izquierda del contenedor */
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Contenedor con position: relative -->
+  <div class="contenedor">
+    <!-- Caja normal que se coloca en el flujo normal del documento -->
+    <div class="caja-normal">
+      Caja normal
+    </div>
+
+    <!-- Caja con position: absolute -->
+    <div class="caja-absoluta">
+      Caja absoluta
+    </div>
+  </div>
+
+</body>
+
+</html>
