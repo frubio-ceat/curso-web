@@ -1,0 +1,68 @@
+p {
+  color: blue;
+} /* Especificidad: ? */
+
+
+.texto {
+  font-size: 16px;
+} /* Especificidad: ? */
+
+
+#principal {
+  background-color: lightgray;
+} /* Especificidad: ? */
+
+
+input[type="text"] {
+  border: 1px solid black;
+} /* Especificidad: ? */
+
+
+article p {
+  line-height: 1.5;
+} /* Especificidad: ? */
+
+
+main > section {
+  padding: 10px;
+} /* Especificidad: ? */
+
+
+h1 + p {
+  font-weight: bold;
+} /* Especificidad: ? */
+
+
+h2 ~ p {
+  color: darkgreen;
+} /* Especificidad: ? */
+
+
+.card.destacada {
+  border: 2px solid red;
+} /* Especificidad: ? */
+
+
+#contenedor .caja strong {
+  text-transform: uppercase;
+} /* Especificidad: ? */
+
+
+button:hover {
+  background-color: yellow;
+} /* Especificidad: ? */
+
+
+p::first-letter {
+  font-size: 2em;
+} /* Especificidad: ? */
+
+
+* + h3 {
+  text-decoration: underline;
+} /* Especificidad: ? */
+
+
+html body main #app .contenedor .elemento h2 {
+  font-style: italic;
+} /* Especificidad: ? */

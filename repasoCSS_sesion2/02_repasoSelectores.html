@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Selectores</title>
+    <style>
+        p.strong {
+            color: red;
+            font-weight: bold;
+        }
+        
+        p + span[class="resaltado"] {
+            background-color: yellow;
+            font-style: italic;
+        }
+        
+        boton hover {
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>Este es un párrafo con un <strong>texto en negrita</strong> que debe cambiar de color.</p>
+    <p>Aquí hay un <span class="resaltado">texto resaltado</span> dentro de un párrafo.</p>
+    <button class="boton">Pasa el cursor sobre mí</button>
+</body>
+</html>
