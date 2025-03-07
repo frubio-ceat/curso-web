@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container {
+      max-width: 500px;
+      display: flex;
+      background-color: lightcoral;
+      
+      /*flex-wrap: wrap;*/
+    }
+    .container div{
+      font-size: 20px;
+      background-color: lightblue;
+      border: 1px solid black;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+      
+  <div class="container" id="container">
+    <div>One</div>
+    <div style="flex-shrink: 2;">The item we will refer to as two</div>
+    <div>The item we will refer to as three</div>
+  </div>
+  
+</body>
+
+</html>

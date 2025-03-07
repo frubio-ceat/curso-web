@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: lightcoral;
+      
+      display: flex;
+    }
+    .container div{
+      font-size: 20px;
+      background-color: lightblue;
+      border: 1px solid black;
+      padding: 1rem;
+      margin: 0.5rem;
+      max-width: 200px;
+    }
+
+    .box:nth-child(3) {
+      margin-left: auto;
+    }
+  </style>
+</head>
+
+<body>
+      
+  <div class="container" id="container">
+    <div class="box">Elemento uno</div>
+    <div class="box">Elemento dos</div>
+    <div class="box">Elemento tres</div>
+    <div class="box">Elemento cuatro</div>
+  </div>
+  
+</body>
+
+</html>

@@ -7,23 +7,24 @@
     <style>
         /* Tamaño base de la fuente en el documento */
         html {
-            font-size: 16px; /* 1em = 16px */
+            font-size: 20px; /* 1em = 16px */
+            /* partimos con un lh que por defecto es 1.2em del font-size */
         }
 
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.5; /* 1lh = 1.5 veces el tamaño de la fuente */
-            padding: 2em; /* Espaciado basado en la fuente del body */
+            line-height: 1.5; /* 1lh = 1.5 veces el tamaño de la fuente. Es decir 1.5 sobre el font-size del elemento actual */
+            padding: 2em; /* Espaciado basado en la fuente actual */
         }
 
         h1 {
-            font-size: 2em; /* 2 veces el tamaño de la fuente del body (32px) */
-            margin-bottom: 1lh; /* Margen igual a la altura de línea */
+            font-size: 2em; /* 2 veces el tamaño de la fuente del elemento padre */
+            margin-bottom: 1em; /* Margen igual al tamñado del elemento actual */
         }
 
         p {
             font-size: 1.2em; /* 1.2 veces el tamaño de la fuente base (19.2px) */
-            line-height: 1.6; /* Línea de 1.6 veces el tamaño de fuente */
+            line-height: 1.6; /* Línea de 1.6 veces el tamaño de fuente. Es equivalente a hacer 1.6em sobre el font-size actual. */
             margin-bottom: 1lh; /* Espaciado igual a la altura de línea */
             width: 50ch; /* Máximo 50 caracteres por línea */
         }
