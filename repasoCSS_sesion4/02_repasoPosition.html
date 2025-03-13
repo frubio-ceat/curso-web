@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed y Sticky</title>
+    <style>
+        /* COMPLETAR: Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        /* COMPLETAR: Menú lateral fijo */
+        .menu {
+            /* El menú debe quedarse fijo en la izquierda */
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /* COMPLETAR: Contenedor principal */
+        .contenido {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* COMPLETAR: Encabezado sticky */
+        .sticky-header {
+            /* Este encabezado debe quedarse pegado arriba cuando se haga scroll */
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li>Inicio</li>
+            <li>Acerca de</li>
+            <li>Contacto</li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <h1>Ejemplo de Fixed y Sticky</h1>
+        <p>Haz scroll para ver cómo funciona el sticky header.</p>
+
+        <h2 class="sticky-header">Encabezado Pegajoso</h2>
+
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p style="height: 1200px;">(Mucha más información para hacer scroll)</p>
+    </div>
+</body>
+</html>

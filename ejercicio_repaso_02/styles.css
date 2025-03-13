@@ -1,0 +1,43 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.page {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header y Footer */
+header, footer {
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación, contenido y barra lateral */
+nav, main, aside {
+  padding: 20px;
+}
+
+nav {
+  background-color: #2ecc71;
+}
+
+main {
+  background-color: #ecf0f1;
+}
+
+aside {
+  background-color: #e74c3c;  
+}
