@@ -1,0 +1,80 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* Header y Footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+
+  flex-grow: 1; /* Se estira para ocupar todo el espacio restante */
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+
+/* Navegación, contenido y barra lateral */
+nav, main, aside {
+  padding: 20px;
+}
+
+nav {
+  background-color: #2ecc71;
+  min-width: 20%;
+
+  position: sticky; /* Se queda fijo al hacer scroll */
+  top: 0; /* Punto donde comienza a ser sticky */
+}
+
+main {
+  background-color: #ecf0f1;
+
+  align-self: stretch; /* Se estira para ocupar todo el espacio restante */
+  flex-grow: 1; 
+}
+
+aside {
+  background-color: #e74c3c;
+  min-width: 20%;
+  
+  position: sticky;
+  top: 0; /* Punto donde comienza a ser sticky */
+}
+
+/* ------- MEDIA QUERY PARA MÓVILES ------- */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+
+  nav, aside {
+      width: 100%; /* Ocupan todo el ancho */
+      position: relative; /* Vuelven a ser estáticos */
+      order: -1; /* Se mueven al principio */
+  }
+}

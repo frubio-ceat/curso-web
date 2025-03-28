@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  color: rgba(33, 37, 41, 0.75);
+}
+
+body {
+  min-width: 550px;
+  margin: 0;
+}
+
+.pagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+header,
+main {
+  padding: 0 3% 3% 3%;
+  margin: 1% 0;
+  font-size: 1.5rem;
+}
+
+nav {
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+  height: 100vh;
+  background: #ffffff;
+  padding: 5vh 0 0 2vh;
+  min-width: 200px;
+  max-width: 15vw;
+}
+
+nav a {
+  display: block;
+  color: f0f0f0;
+  font-size: 1.5rem;
+}
+
+a h2 {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background: #ffffff;
+  padding: 5px 3px;
+}
+
+header {
+  background-color: rgba(233, 228, 228, 0.973);
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+article {
+  margin: 0 3%;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+article a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: initial;
+}
+
+/*
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: initial;
+  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+*/
+
+footer {
+  margin: 0 0;
+  padding: 5%;
+  background-color: rgba(233, 228, 228, 0.973);
+}
+
+footer a {
+  display: block;
+  text-align: center;
+}
+
+/*
+main {
+    flex-grow: 1;
+}
+*/
+
+
+button {
+  align-self: flex-end;
+}
+
+@media (max-width: 1000px) {
+  img {
+    width: 300px;
+  }
+}

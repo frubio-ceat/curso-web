@@ -1,0 +1,110 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerNavegacion{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+    color: #1C2F4F;
+    padding: 8px 20px;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.headerMenuNavegacion{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerMenuNavegacion a{
+    font-size: 18px;
+    color: #1C2F4F;
+    padding-inline: 20px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #1C2F4F;
+}
+
+.header img{
+    margin-inline: 20px;
+}
+
+.bordeCarousel{
+    border-top:6px solid #1C2F4F;
+    border-bottom: 8px solid #1C2F4F;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.contenedorProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border: solid 2px rgb(218, 218, 218);
+    border-radius: 10px;
+    margin: 20px 100px;
+}
+
+.bloqueProductos{
+    padding:20px 50px;
+    max-width: 1000px;
+}
+
+.card-title{
+    text-align: center;
+    padding-bottom: 10px
+}
+
+.card-img-top{
+    margin:10px 0px;
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonComprar{
+    background-color: #A49472;
+    border-radius: 10px;
+    padding: 4px 12px;
+    color: white;
+    text-decoration: none;
+    border: solid 1px #928466;
+}
+
+.botonComprar:hover{
+    background-color: #1C2F4F;
+}
+
+
+.footer{
+    font-size: medium;
+    background-color: #1C2F4F;
+    color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+.footer a{
+    color: rgb(235, 235, 235);
+}
+
+.footer p{
+    margin: 0px;
+}
+
+
