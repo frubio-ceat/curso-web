@@ -8,7 +8,6 @@
 /* Estilos generales */
 .page {
   min-height: 100vh; /* TAMAÑO MÍNIMO DE ALTO QUE CUBRE TODA LA PÁGINA */
-  min-width: 100vw; /* TAMAÑO MÍNIMO DE ANCHO, AFECTA CUANDO HAY SCROLLBAR VISIBLE */
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
 
