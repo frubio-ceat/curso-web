@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      max-width: 700px;
+      min-height: 500px;
+      background-color: lightpink;
+
+      display: grid;
+      grid-template-columns: minmax(12em, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-rows: 100px 1fr 1fr;
+      gap: 10px;
+      
+    }
+    .item {
+      background-color: lightblue;
+      border: 1px solid blue;
+    }
+
+    /* EJEMPLO DE SPAN Y AUTO */
+    .item-especial {
+      grid-column-start: auto;
+      grid-column-end: span 3;
+    }
+
+    /* EJEMPLO DE INICIO Y FIN NUMÉRICO SOBRE LAS LÍNEAS */
+    .item-especial {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: -1; /* -1 significa la última línea de la cuadrícula */
+    }
+
+    /* EJEMPLO DE INICIO Y FIN NUMÉRICO SOBRE LOS ÍTEMS */
+    .item-especial {
+      grid-column: auto / span 2; /* auto significa la primera línea de la cuadrícula */
+      grid-row: auto / -1; /* -1 significa la última línea de la cuadrícula */
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">One</div>
+    <div class="item item-especial">Two</div>
+    <div class="item">Three</div>
+    <div class="item">Four</div>
+    <div class="item">Five</div>
+  </div>
+</body>
+
+</html>

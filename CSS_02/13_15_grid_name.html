@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns:
+        [main-start aside-start] 1fr 
+        [aside-end content-start] 2fr 
+        [content-end main-end];
+      /* a two column layout */
+    }
+
+    .sidebar {
+      background-color: lightblue;
+      border: 1px solid blue;
+      grid-column: aside-start / aside-end;
+      /* placed between line 1 and 2*/
+    }
+
+    footer {
+      background-color: lightpink;
+      border: 1px solid pink;
+      grid-column: main-start / main-end;
+      /* right across the layout from line 1 to line 3*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">Sidebar</div>
+    <div class="item">Three</div>
+    <footer>Footer</footer>
+    
+  </div>
+</body>
+
+</html>

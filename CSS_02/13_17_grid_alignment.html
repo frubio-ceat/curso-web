@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      min-height: 100vh;
+      background-color: lightpink;
+
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(3, auto);
+      gap: 10px;
+
+      justify-content: stretch;
+      justify-content: start;
+      /*justify-content: end;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around;
+      justify-content: space-evenly;*/
+
+      align-content: stretch;
+      /*align-content: start;
+      align-content: end;
+      align-content: center;
+      align-content: space-between;
+      align-content: space-around;
+      align-content: space-evenly;*/
+
+      
+      justify-items: stretch;
+      justify-items: start;
+      /*justify-items: end;
+      justify-items: center;*/
+
+      
+      align-items: stretch;    
+      /*align-items: start;
+      align-items: end;
+      align-items: center;*/
+
+
+    }
+
+    .item {
+      background-color: lightblue;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three <br> Tres</div>
+    <div class="item">Four</div>
+    <div class="item">Five <br> Cinco</div>
+    <div class="item">Six</div>
+    <div class="item">Seven <br> Siete</div>
+    <div class="item">Eight</div>
+    <div class="item">Nine</div>
+  </div>
+</body>
+
+</html>

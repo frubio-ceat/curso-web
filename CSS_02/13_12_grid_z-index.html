@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      max-width: 700px;
+      min-height: 500px;
+      background-color: lightpink;
+
+      display: grid;
+      grid-template-columns: minmax(12em, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-rows: 100px 1fr 1fr 1fr;
+      gap: 10px;
+      
+    }
+    .item {
+      background-color: lightblue;
+      border: 1px solid blue;
+    }
+
+    .item-header {
+      grid-column: 1 / -1; /* ocupa todas las columnas */
+      grid-row: 1 / span 2; /* ocupa 2 filas */
+    }
+
+    .item-header-special {
+      grid-column: 2 / -1; /* ocupa todas las columnas */
+      grid-row: 2 / span 2; /* ocupa 2 filas */
+      z-index: 1; /* se coloca por encima de los demás elementos */
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item-header">HEADER</div>
+    <div class="item item-header-special">HEADER ESPECIAL</div>
+    <div class="item">Three</div>
+    <div class="item">Four</div>
+    <div class="item">Five</div>
+  </div>
+</body>
+
+</html>
