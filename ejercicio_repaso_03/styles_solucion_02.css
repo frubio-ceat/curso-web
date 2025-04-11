@@ -1,0 +1,72 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  display: grid;
+  grid-template-rows: 200px 1fr 100px; /* Header, contenido, footer */
+  grid-template-columns: 300px 1fr 300px; /* Una sola columna */
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
+
+/* Header y Footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+}
+
+/* Navegación, contenido y barra lateral */
+nav, main, aside {
+  padding: 20px;
+}
+
+
+header {
+  grid-area: header; /* Ocupa toda la fila */
+}
+
+footer {
+  grid-area: footer; /* Ocupa toda la fila */
+}
+
+nav {
+  background-color: #2ecc71;
+  grid-area: nav; /* Ocupa la columna de navegación */
+}
+
+main {
+  background-color: #ecf0f1;
+  grid-area: main; /* Ocupa la columna principal */
+}
+
+aside {
+  background-color: #e74c3c;
+  grid-area: aside; /* Ocupa la columna lateral */
+}
+
+/* ------- MEDIA QUERY PARA MÓVILES ------- */
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "aside"
+      "main"
+      "footer";
+  }
+}

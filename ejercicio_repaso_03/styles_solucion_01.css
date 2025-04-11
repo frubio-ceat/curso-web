@@ -1,0 +1,56 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  display: grid;
+  grid-template-rows: 200px 1fr 100px; /* Header, contenido, footer */
+  grid-template-columns: 300px 1fr 300px; /* Una sola columna */
+}
+
+/* Header y Footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+}
+
+/* Navegación, contenido y barra lateral */
+nav, main, aside {
+  padding: 20px;
+}
+
+nav {
+  background-color: #2ecc71;
+}
+
+main {
+  background-color: #ecf0f1;
+}
+
+aside {
+  background-color: #e74c3c;
+}
+
+/* ------- MEDIA QUERY PARA MÓVILES ------- */
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto;
+  }
+
+  aside {
+    grid-row-start: 3; /* Coloca el aside debajo del main */
+  }
+}
