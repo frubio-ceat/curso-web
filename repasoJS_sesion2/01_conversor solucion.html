@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor</title>
+</head>
+
+<body>
+  <script>
+    const segundosHora = 3600;
+    const segundosMinuto = 60;
+
+    while (true) {
+      let segundosTotales = Number(prompt("Introduce el número de segundos: "));
+
+      let horasDecimal = segundosTotales / segundosHora;
+      let minutosDecimal = segundosTotales / segundosMinuto;
+      let segundosDecimal = segundosTotales;
+
+      // con la función Math.floor() redondeamos hacia abajo el resultado de la división
+      let horas = Math.floor(segundosTotales / segundosHora);
+      let minutos = Math.floor((segundosTotales % segundosHora) / segundosMinuto);
+      let segundos = segundosTotales % segundosMinuto;
+
+      alert(`horas: ${horasDecimal}\nminutos: ${minutosDecimal}\nsegundos: ${segundosDecimal}
+    \n\nEn formato reloj: ${horas}:${minutos}:${segundos}`);
+    }
+  </script>
+
+</body>
+
+</html>
