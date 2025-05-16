@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Laura",
+    "apellidos": "Martínez Pérez",
+    "referencia": "BM-101",
+    "fechaNacimiento": "1990-05-14"
+  },
+  {
+    "nombre": "Carlos",
+    "apellidos": "Gómez Sánchez",
+    "referencia": "AVD-204",
+    "fechaNacimiento": "1985-11-23"
+  },
+  {
+    "nombre": "Ana",
+    "apellidos": "López Ramírez",
+    "referencia": "TRX-308",
+    "fechaNacimiento": "1992-08-01"
+  },
+  {
+    "nombre": "David",
+    "apellidos": "Fernández Ruiz",
+    "referencia": "LZ-117",
+    "fechaNacimiento": "1988-03-09"
+  },
+  {
+    "nombre": "Elena",
+    "apellidos": "Torres Morales",
+    "referencia": "BM-226",
+    "fechaNacimiento": "1995-12-17"
+  },
+  {
+    "nombre": "Javier",
+    "apellidos": "Díaz Navarro",
+    "referencia": "QF-015",
+    "fechaNacimiento": "1983-07-06"
+  },
+  {
+    "nombre": "Isabel",
+    "apellidos": "Serrano Ortega",
+    "referencia": "NR-092",
+    "fechaNacimiento": "1991-09-22"
+  },
+  {
+    "nombre": "Miguel",
+    "apellidos": "Vega Herrera",
+    "referencia": "AVD-612",
+    "fechaNacimiento": "1993-02-15"
+  },
+  {
+    "nombre": "Patricia",
+    "apellidos": "Cano Rivas",
+    "referencia": "PLX-300",
+    "fechaNacimiento": "1987-10-11"
+  },
+  {
+    "nombre": "Luis",
+    "apellidos": "Molina Castro",
+    "referencia": "TRX-172",
+    "fechaNacimiento": "1990-04-28"
+  },
+  {
+    "nombre": "Lucía",
+    "apellidos": "Reyes Méndez",
+    "referencia": "LZ-089",
+    "fechaNacimiento": "1996-06-12"
+  },
+  {
+    "nombre": "Sergio",
+    "apellidos": "Aguilar León",
+    "referencia": "BM-007",
+    "fechaNacimiento": "1989-01-19"
+  },
+  {
+    "nombre": "María",
+    "apellidos": "Nieto Bravo",
+    "referencia": "QF-304",
+    "fechaNacimiento": "1984-12-03"
+  },
+  {
+    "nombre": "Alberto",
+    "apellidos": "Romero Campos",
+    "referencia": "AVD-220",
+    "fechaNacimiento": "1991-08-26"
+  },
+  {
+    "nombre": "Carmen",
+    "apellidos": "Iglesias Peña",
+    "referencia": "NR-544",
+    "fechaNacimiento": "1986-05-30"
+  },
+  {
+    "nombre": "Andrés",
+    "apellidos": "Ortega Paredes",
+    "referencia": "PLX-199",
+    "fechaNacimiento": "1994-03-18"
+  },
+  {
+    "nombre": "Natalia",
+    "apellidos": "Silva Lozano",
+    "referencia": "LZ-351",
+    "fechaNacimiento": "1992-10-07"
+  },
+  {
+    "nombre": "Francisco",
+    "apellidos": "Vargas Márquez",
+    "referencia": "BM-900",
+    "fechaNacimiento": "1980-07-13"
+  },
+  {
+    "nombre": "Beatriz",
+    "apellidos": "Delgado Cordero",
+    "referencia": "TRX-441",
+    "fechaNacimiento": "1989-11-01"
+  },
+  {
+    "nombre": "Héctor",
+    "apellidos": "Castillo Arias",
+    "referencia": "QF-128",
+    "fechaNacimiento": "1993-09-04"
+  }
+]
