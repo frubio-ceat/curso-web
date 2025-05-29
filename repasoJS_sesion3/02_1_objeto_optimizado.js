@@ -13,31 +13,36 @@ const auto = {
   modelo: "Toyota Corolla",
   combustible: 50,
   conducir(km) {
-
+    // checks
     if (typeof km !== 'number') {
       console.log("Error: km debe ser un número.");
+      return;
     }
-    else {
-      if (km > 0) {
-        const consumo = km * 0.2;
-        if (km === 0) {
-          console.log(`${this.modelo} no se mueve.`);
-          return;
-        }
-        if (this.combustible === 0) {
-          console.log(`${this.modelo} no puede conducir: sin combustible.`);
-          return;
-        }
-        this.combustible -= consumo;
 
-        if (this.combustible < 0) this.combustible = 0;
-        
-        console.log(`${this.modelo} condujo ${km} km.`);
-      }
-      else {
-        console.log("Error: km no puede ser negativo.");
-      }
+    if (km <= 0) {
+      console.log("Error: km no puede ser 0 o negativo.");
+      return;
     }
+
+    if (this.combustible <= 0) {
+      console.log("No tengo gasolina.");
+      return;
+    }
+
+    // implements
+    const consumo = km * 0.2;
+    const autonomia = this.calcularAutonomia();
+
+    if(consumo>this.calcularAutonomia()){
+      console.log("No tengo gasolina suficiente");
+      return;
+    }
+
+    this.combustible -= consumo;
+    console.log(`${this.modelo} condujo ${km} km.`);
+  },
+  calcularAutonomia(){
+    return this.combustible/0.2;
   },
   repostar(litros) {
     this.combustible += litros;
@@ -52,7 +57,7 @@ const auto = {
         return;
       }
     }
-    
+
     if (this.combustible > 50) this.combustible = 50;
     console.log(`${this.modelo} repostó ${litros} litros.`);
   },
@@ -62,7 +67,7 @@ const auto = {
 };
 
 // Ejemplo de uso:
-auto.conducir(100);   // consume 20 litros
+auto.conducir("1");   // consume 20 litros
 auto.estado();        // debería mostrar 30 litros
 auto.conducir(200);   // consume lo que queda
 auto.estado();        // 0 litros

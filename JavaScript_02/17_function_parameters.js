@@ -16,9 +16,20 @@ saludar2("Juan");
 saludar2();
 
 function saludar3(){
+
     console.log(`Hola ${arguments[0]}`);
 }
 // llamada con parámetro
 saludar3("Juan");
 // llamada sin parámetro
 saludar3();
+
+function imprimirLog(){
+    let cadenaTotal = "";
+    for(let i=0; i<arguments.length; i++){
+        cadenaTotal += arguments[i]+" ";
+    }
+    console.log(cadenaTotal);
+}
+
+imprimirLog("hola", "mundo", "!");

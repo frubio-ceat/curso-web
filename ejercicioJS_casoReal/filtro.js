@@ -10,7 +10,7 @@ const personas = JSON.parse(data);
 
 // vamos a filtrar por nombre, apellido y referencia
 // tenemos un objeto con nombre apellido y referencia que contiene una cadena sobre la que filtrar
-// tendremos que hacer una función que reciba el array de objetos y el objeto de filtro y devolver los objetos que cumplan con el filtro
+// tendremos que hacer una función que reciba el array de objetos y el objeto de  r los objetos que cumplan con el filtro
 // el filtrado debe ignorar mayúsculas y minúsculas, es decir, "j" y "J" son lo mismo
 
 // ejemplos de filtros:
@@ -26,9 +26,15 @@ const filtro2 = {
 
 const filtro3 = {
   nombre:"L",
-  ref: "BM",
-  apellido: null
+  referencia: "BM",
+  apellidos: null
 };
+
+function filtrarUsuarios (listaUsuarios, filtro){
+
+}
+
+usuariosFiltrados = filtrarUsuarios(personas, filtro3);
 // devuelve todos los objetos cuyo nombre empiece por "L" y la referencia empiece por "BM" indistintamente de si es mayúscula o minúscula
 
 // COSAS A TENER EN CUENTA:

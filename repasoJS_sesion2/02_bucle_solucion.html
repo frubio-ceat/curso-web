@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Usuarios por Rol</title>
+  <style>
+    .admin { color: red; font-weight: bold; }
+    .editor { color: blue; }
+    .viewer { color: gray; }
+  </style>
+</head>
+<body>
+
+  <div id="userList"></div>
+
+  <script>
+    const users = [
+      { name: "Ana", role: "admin" },
+      { name: "Luis", role: "editor" },
+      { name: "Carlos", role: "viewer" },
+      { name: "Marta", role: "editor" },
+      { name: "Sofía", role: "admin" }
+    ];
+
+    // A partir de aquí hay una serie de errores en el código
+    let htmlContent = "<ul>";
+
+    for (let i = 0; i < users.length; i++) {
+      const user = users[i];
+
+      if (user.role === "admin") {
+        htmlContent += "<li class=\"admin\">" + user.name + "(Administrador)</li>";
+      } else if (user.role === "editor") {
+        htmlContent = htmlContent + '<li class="editor">' + user.name + '(Editor)</li>';
+      } else {
+        htmlContent += `<li class="viewer"> ${user.name} (Lector)</li>`;
+      }
+    }
+
+    htmlContent += "</ul>";
+    console.log(htmlContent);
+
+    // inyectar el contenido HTML en el div con id "userList"
+    document.getElementById("userList").innerHTML = htmlContent;
+  </script>
+
+</body>
+</html>

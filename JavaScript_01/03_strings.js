@@ -4,7 +4,7 @@ console.log('Hola mundo.'); // Diferentes formas de definir cadenas
 console.log(`Hola mundo.`); // Template literals (plantillas literales)
 
 // uso del escape
-console.log( '"I\'m a string," I said.' );
+console.log( "\"I'm a string\", I said." );
 
 // uso de String()
 console.log(String(123)); // Convierte el número 123 a cadena

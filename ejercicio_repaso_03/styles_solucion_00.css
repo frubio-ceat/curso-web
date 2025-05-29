@@ -1,0 +1,74 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+.page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 200px 1fr 100px;
+  grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer"
+  ;
+}
+
+/* Header y Footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+
+  grid-column: 1 / -1;
+}
+
+/* Navegación, contenido y barra lateral */
+nav, main, aside {
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+nav {
+  background-color: #2ecc71;
+  grid-area: nav;
+}
+
+main {
+  background-color: #ecf0f1;
+  grid-area: main;
+}
+
+aside {
+  background-color: #e74c3c;
+  grid-area: aside;
+}
+
+/* ------- MEDIA QUERY PARA MÓVILES ------- */
+@media (max-width: 768px) {
+  .page{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "aside"
+      "main"
+      "footer";
+  }
+}

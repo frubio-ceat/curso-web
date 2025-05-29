@@ -28,6 +28,7 @@ console.log(primerParrafo.tagName); // nombre de la etiqueta del elemento
 console.log(primerParrafo.textContent); // contenido de texto del elemento
 console.log(primerParrafo.innerText); // contenido de texto del elemento, pero solo el visible
 console.log(primerParrafo.innerHTML); // contenido HTML del elemento
+console.log(primerParrafo.outerHTML);
 
 console.log(primerParrafo.style); // devuelve un objeto CSSStyleDeclaration con las propiedades CSS del elemento
 console.log(primerParrafo.style.color); // color del texto del elemento

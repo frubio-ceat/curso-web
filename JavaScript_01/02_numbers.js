@@ -1,7 +1,9 @@
 let myVariable = 5; // Variable de tipo number
 console.log(typeof myVariable); // Imprime "number"
+console.log("two" * 2);
 
-myVariable = Number("10");
+myVariable = Number(10);
+console.log(myVariable === 10);
 console.log(typeof myVariable); // Imprime "number"
 
 // Errores de precisión en números de punto flotante
@@ -35,6 +37,13 @@ console.log("\nOperadores");
 let a = 5;
 a += 10; // Suma 10 a a
 console.log(a); // Imprime 15
+
+console.log("incremento de a:");
+let prueba = ++a; // Incrementa a y luego asigna a prueba
+let prueba2 = a++; // Asigna a prueba2 y luego incrementa a
+console.log(prueba); // Imprime 16
+console.log(prueba2); // Imprime 16
+
 
 let b = 5;
 b **= 2; // Eleva b a la potencia de 2
