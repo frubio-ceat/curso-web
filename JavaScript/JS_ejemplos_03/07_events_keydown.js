@@ -7,7 +7,7 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-/*
+
 // Detenemos la propagación del evento keydown en inputs y textareas
 const inputs = document.querySelectorAll("input, textarea");
 
@@ -16,4 +16,3 @@ inputs.forEach(input => {
     e.stopPropagation();
   });
 });
-*/
