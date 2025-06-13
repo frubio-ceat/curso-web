@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diálogo con HTML y JS</title>
+  <!-- 
+  <link rel="stylesheet" href="13_dialogs.css" />
+   -->
+</head>
+<body>
+  <button id="abrir">Abrir diálogo</button>
+
+  <dialog id="miDialogo">
+    <div class="dialog-content">
+      <p>Este es un diálogo nativo</p>
+      <div>
+        <button id="cerrar">Cancelar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const dialogo = document.getElementById("miDialogo");
+    const btnAbrir = document.getElementById("abrir").addEventListener("click", () => {
+      dialogo.showModal();
+    });
+    const btnCerrar = document.getElementById("cerrar").addEventListener("click", () => {
+      dialogo.close();
+    });
+  </script>
+</body>
+</html>

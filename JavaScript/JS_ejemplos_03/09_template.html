@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tarjeta con Template</title>
+  <style>
+    .tarjeta {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1em;
+      margin: 1em;
+      width: 200px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      font-family: sans-serif;
+    }
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tarjetas de ejemplo</h2>
+  <div class="contenedor" id="contenedorTarjetas"></div>
+
+  <template id="templateTarjeta">
+    <div class="tarjeta">
+      <h3 class="titulo"></h3>
+      <p class="descripcion"></p>
+    </div>
+  </template>
+
+  <script>
+    const datos = [
+      { titulo: "Tarjeta 1", descripcion: "Esta es la primera tarjeta." },
+      { titulo: "Tarjeta 2", descripcion: "Contenido de la segunda tarjeta." },
+      { titulo: "Tarjeta 3", descripcion: "Otra tarjeta más con texto." }
+    ];
+
+    const contenedor = document.getElementById("contenedorTarjetas");
+    const template = document.getElementById("templateTarjeta");
+
+    datos.forEach(dato => {
+      const clon = template.content.cloneNode(true);
+      clon.querySelector(".titulo").textContent = dato.titulo;
+      clon.querySelector(".descripcion").textContent = dato.descripcion;
+      contenedor.appendChild(clon);
+    });
+  </script>
+</body>
+</html>
